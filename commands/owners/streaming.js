@@ -7,8 +7,8 @@ module.exports = {
       return message.reply("✓ | Bot Owner Only Commamd");
     const activity = args.join(" ");
     client.user.setActivity(activity, {
-      type: "STREAMING",
-      url: "https://discord.gg/wXemeVm"
+      type: "IDLE",
+      url: ""
     });
     message.delete();
     await message.channel.send(`Set Activity PLAYING ${activity}`).then(msg => {
